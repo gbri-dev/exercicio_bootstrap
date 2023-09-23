@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booststrap fundamentos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <style>
+    table tr:hover {
+      opacity: 80%;
+      cursor: pointer;
+    }
+
+    .footer {
+      width: 100%;
+      height: 300px;
+      background-color: gray;
+    }
+
+    #preco p {
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+    Criando a estrutura:
+    .container>.row>.col*5>img+h3
+  -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://placeholder.com/180x180" alt="">
+        <h3>Produto</h3>
+      </div>
+      <div class="col">
+        <img src="https://placeholder.com/180x180" alt="">
+        <h3>Produto</h3>
+      </div>
+      <div class="col">
+        <img src="https://placeholder.com/180x180" alt="">
+        <h3>Produto</h3>
+      </div>
+      <div class="col">
+        <img src="https://placeholder.com/180x180" alt="">
+        <h3>Produto</h3>
+      </div>
+      <div class="col">
+        <img src="https://placeholder.com/180x180" alt="">
+        <h3>Produto</h3>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <h1>Tipografias</h1>
+  <p class="h1">tipografia title h1</p>
+  <br>
+  <p class="display-1"><mark>display-1</mark> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, tempore.
+  </p>
+  <br>
+  <h1>Tabela</h1>
+  <table class="table table-dark">
+    <caption>Tabela de produtos</caption>
+    <thead>
+      <th>Data</th>
+      <th>Descricao</th>
+      <th>Valor</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>29 de set 2023</td>
+        <td>Curso EBAC</td>
+        <td>R$ 5500,00</td>
+      </tr>
+      <tr>
+        <td>29 de set 2023</td>
+        <td>Curso udemy clean code</td>
+        <td>R$ 22,00</td>
+      </tr>
+      <tr>
+        <td>29 de set 2023</td>
+        <td>Curso udemy razor</td>
+        <td>R$ 22,00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1>Botões</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-outline-dark">Click aqui</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-dark">Click aqui</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary">Click aqui</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-link">Click aqui</button>
+      </div>
+    </div>
+    <div class="row">
+      <p class="display-4">Tamanhos dos botões</p>
+      <div class="col">
+        <button class="btn btn-lg btn-success">exemple lg</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-md btn-warning">exemple md</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-sm btn-info">exemple sm</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-danger"
+          style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">exemple
+          custumized</button>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <h1>Accordions</h1>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">
+                Pergunta
+              </button>
+            </div>
+            <div id="resposta1" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Resposta da pergunta
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                Segunda pergunta
+              </button>
+            </div>
+            <div id="resposta2" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Resposta da segunda pergunta
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container">
+    <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#preco">Ver Preço</button>
+    <div id="preco" class="collapse collapse-horizontal">
+      <p>3x R$150,00 sem juros</p>
+    </div>
+  </div>
+
+  <br>
+  <h1>Alertas</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-8"></div>
+      <div class="col-4">
+        <div class="alert alert-danger alert-disimissible">
+          <button class="btn-close" data-bs-dismiss="alert"></button>
+          Esse alerta sera apagado quando você a fechar.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+
+    <div class="dropdown">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Menu
+      </a>
+
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="./newletters.html">Portal de noticias</a></li>
+        <li><a class="dropdown-item" href="#">27999877446</a></li>
+        <li><a class="dropdown-item" href="#">techgolinfo1@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+time{
+  display: block;
+}
+
+.post {
+  margin-bottom: 18px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-top: 44px;
+  opacity: 50%;
+}
